@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- integration de jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <title>Pizza Haut Maroc</title>
+  </head>
+  <body>
+    <header>
+        <h1>Pizza Haut Maroc</h1>
+    </header>
+
+    <main>
+      <section class="formulaire">
+        <h1>Commander votre pizza</h1>
+        <fieldset>
+          <legend>Pizza Haut</legend>
+          <form method="post" id="form">
+            <label for="nom">Nom de Client</label>
+            <input type="text" id="nom" name="nom" required />
+            <label for="adresse">Adresse de Client</label>
+            <input type="text" id="adresse" name="adresse" required />
+            <select name="pizza" id="pizza"></select>
+            <label for="quantite">Quantité</label>
+            <input
+              type="number"
+              id="quantite"
+              name="quantite"
+              min="1"
+              required
+            />
+            <input type="submit" value="Commander" />
+            <hr />
+            <div class="paiments">
+              <div class="">
+                <label for="paiment">Carte Bancaire</label>
+                <input type="radio" name="paiment" id="paiment"  value="cart"/>
+              </div>
+              <div>
+                <label for="cheque">Cheque</label>
+                <input type="radio" name="paiment" id="cheque" value="cheque" />
+              </div>
+            </div>
+            <div class="carte">
+                <label for="num">Numero de carte</label>
+                <input style="width: 100%; margin-top: 5px;" type="number" id="num" name="num"  min="0"/>
+            </div>
+           
+        </form>
+        <div>
+            <button id="envoyer" >Envoyer </button>
+            <div class="message">Merci pour votre visit le total de votre command est: 0 DH</div>
+        </div>
+        </fieldset>
+      </section>
+      <section class="info">
+        <h1>les articles choisie: </h1>
+        <table>
+            <thead>
+                <tr>
+                <th>nom Pizza</th>
+                <th>Prix Unitaire</th>
+                <th>quantite</th>
+                </tr>
+            </thead>
+            <tbody> 
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>0</td>
+                </tr>
+            </tfoot>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Pizza Haut Maroc</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

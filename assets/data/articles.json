@@ -1,0 +1,22 @@
+[
+  {
+    "Code": "P01",
+    "designation": "Pizza 4 fromages",
+    "Prix": "80"
+  },
+  {
+    "Code": "P02",
+    "designation": "Pizza Viande Hachée",
+    "Prix": "120"
+  },
+  {
+    "Code": "P03",
+    "designation": "Pizza Herbo",
+    "Prix": "75"
+  },
+  {
+    "Code": "P04",
+    "designation": "Pizza Fruits de mer",
+    "Prix": "120"
+  }
+]
